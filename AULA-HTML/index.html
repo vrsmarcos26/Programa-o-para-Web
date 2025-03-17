@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+><html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Aula01</title>
+</head>
+<body>
+    <center>Mudando o estilo de char</center>
+    <p>
+        <b>Texto em negrito</b> <br>
+        <i>Texto em itálico</i> <br>
+        <u>Texto sublinhado</u> <br>
+        <tt> Texto com monoespaço</tt> <br>
+        <br>
+        <font color="blue">Texto em vermelho</font>
+        <br>
+        <font size="7"> Tamanho da fonte</font>
+        <br>
+        <h1>TAMANHO DE TÍTULO 1</h1>
+        <h2>Tamanho de título 2</h2>
+        <h3>Tamanho de título 3</h3>
+        <h4>Tamanho de título 4</h4>
+        <h5>Tamanho de título 5</h5>
+        <h6>Tamanho de título 6</h6>
+        <br>
+
+        <center><font face="Impact" size="7" color="red">Hello MERDA DE MUNDO :/</font></center>
+        <br>
+        <pre>
+            Centro Universitário de Brasília
+                                    Ciência da Computação
+                                        Programação para web
+
+        </pre>
+
+        <pre>
+            // Função para pegar os parâmetros da URL
+        function getParametro(url, nomeParametro) {
+            const parametros = new URLSearchParams(url.search);
+            return parametros.get(nomeParametro);
+        }
+
+        // Pegando o parâmetro 'pre' da URL
+        const urlAtual = window.location;
+        const valorPre = getParametro(urlAtual, 'pre');
+
+        // Exibindo o valor do parâmetro na página
+        const resultado = document.getElementById('resultado');
+        if (valorPre) {
+            resultado.innerHTML = `O valor do parâmetro "pre" é: ${valorPre}`;
+        } else {
+            resultado.innerHTML = 'Parâmetro "pre" não encontrado na URL.';
+        }
+
+        ,'\
+        _.----.        ____         ,'  _\   ___    ___     ____
+    _,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`.
+    \      __    \    '-.  | /   `.  ___    |    \/    |   '-.   \ |  |
+     \.    \ \   |  __  |  |/    ,','_  `.  |          | __  |    \|  |
+       \    \/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |
+        \     ,-'/  /   \    ,'   | \/ / ,`.|         /  /   \  |     |
+         \    \ |   \_/  |   `-.  \    `'  /|  |    ||   \_/  | |\    |
+          \    \ \      /       `-.`.___,-' |  |\  /| \      /  | |   |
+           \    \ `.__,'|  |`-._    `|      |__| \/ |  `.__,'|  | |   |
+            \_.-'       |__|    `-._ |              '-.|     '-.| |   |
+                                    `'                            '-._|
+
+                                    /
+                                    _,.------....___,.' ',.-.
+                                 ,-'          _,.--"        |
+                               ,'         _.-'              .
+                              /   ,     ,'                   `
+                             .   /     /                     ``.
+                             |  |     .                       \.\
+                   ____      |___._.  |       __               \ `.
+                 .'    `---""       ``"-.--"'`  \               .  \
+                .  ,            __               `              |   .
+                `,'         ,-"'  .               \             |    L
+               ,'          '    _.'                -._          /    |
+              ,`-.    ,".   `--'                      >.      ,'     |
+             . .'\'   `-'       __    ,  ,-.         /  `.__.-      ,'
+             ||:, .           ,'  ;  /  / \ `        `.    .      .'/
+             j|:D  \          `--'  ' ,'_  . .         `.__, \   , /
+            / L:_  |                 .  "' :_;                `.'.'
+            .    ""'                  """""'                    V
+             `.                                 .    `.   _,..  `
+               `,_   .    .                _,-'/    .. `,'   __  `
+                | \`._        ___....----"'  ,'   .'  \ |   '  \  .
+               /   `. "`-.--"'         _,' ,'     `---' |    `./  |
+              .   _  `""'--.._____..--"   ,             '         |
+              | ." `. `-.                /-.           /          ,
+              | `._.'    `,_            ;  /         ,'          .
+             .'          /| `-.        . ,'         ,           ,
+             '-.__ __ _,','    '`-..___;-...__   ,.'\ ____.___.'
+             `"^--'..'   '-`-^-'"--    `-^-'`.''"""""`.,^.`.--' mh
+        
+        
+        </pre>
+
+        <hr widght="100%" size="20" noshade="" align="center"
+        color="yellow">
+        <br>
+
+        <!-- Alinhamento de textos e parágrafos -->
+
+        <center><font face="arial balck" size="5" color="silver">Alinhamento de Textos e parágrafos</font></center><br>
+
+        <h4 align="center">Título centralizado</h4>
+        <h4 align="right">Título direita</h4>
+        <h4 align="left">Título esquerda</h4>
+        <hr>
+        <p align="center"><b>Parágrafo ao centro - </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius rhoncus ipsum at egestas. Ut sagittis leo vel tortor euismod finibus. Proin placerat tincidunt nulla, vel convallis dolor condimentum vitae. Maecenas id arcu cursus, tincidunt dui nec, faucibus est. Vivamus hendrerit ex id magna ornare, id mollis lacus pulvinar. Aliquam sit amet augue in quam volutpat consequat. Sed fermentum leo erat, in facilisis purus faucibus eget. Donec euismod tincidunt semper. Quisque sit amet diam non nibh imperdiet porttitor. Aenean venenatis orci a lorem mattis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec hendrerit enim. Phasellus consectetur vitae elit a blandit. Nulla iaculis aliquam mauris ut interdum. Nam tempus fermentum sem ullamcorper consectetur. Vestibulum tempus finibus aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius rhoncus ipsum at egestas. Ut sagittis leo vel tortor euismod finibus. Proin placerat tincidunt nulla, vel convallis dolor condimentum vitae. Maecenas id arcu cursus, tincidunt dui nec, faucibus est. Vivamus hendrerit ex id magna ornare, id mollis lacus pulvinar. Aliquam sit amet augue in quam volutpat consequat. Sed fermentum leo erat, in facilisis purus faucibus eget. Donec euismod tincidunt semper. Quisque sit amet diam non nibh imperdiet porttitor. Aenean venenatis orci a lorem mattis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec hendrerit enim. Phasellus consectetur vitae elit a blandit. Nulla iaculis aliquam mauris ut interdum. Nam tempus fermentum sem ullamcorper consectetur. Vestibulum tempus finibus aliquet.</p>
+        <hr>
+        <p align="right"><b>Texto alinhado a direita = </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius rhoncus ipsum at egestas. Ut sagittis leo vel tortor euismod finibus. Proin placerat tincidunt nulla, vel convallis dolor condimentum vitae. Maecenas id arcu cursus, tincidunt dui nec, faucibus est. Vivamus hendrerit ex id magna ornare, id mollis lacus pulvinar. Aliquam sit amet augue in quam volutpat consequat. Sed fermentum leo erat, in facilisis purus faucibus eget. Donec euismod tincidunt semper. Quisque sit amet diam non nibh imperdiet porttitor. Aenean venenatis orci a lorem mattis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec hendrerit enim. Phasellus consectetur vitae elit a blandit. Nulla iaculis aliquam mauris ut interdum. Nam tempus fermentum sem ullamcorper consectetur. Vestibulum tempus finibus aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius rhoncus ipsum at egestas. Ut sagittis leo vel tortor euismod finibus. Proin placerat tincidunt nulla, vel convallis dolor condimentum vitae. Maecenas id arcu cursus, tincidunt dui nec, faucibus est. Vivamus hendrerit ex id magna ornare, id mollis lacus pulvinar. Aliquam sit amet augue in quam volutpat consequat. Sed fermentum leo erat, in facilisis purus faucibus eget. Donec euismod tincidunt semper. Quisque sit amet diam non nibh imperdiet porttitor. Aenean venenatis orci a lorem mattis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec hendrerit enim. Phasellus consectetur vitae elit a blandit. Nulla iaculis aliquam mauris ut interdum. Nam tempus fermentum sem ullamcorper consectetur. Vestibulum tempus finibus aliquet.</p>
+
+        <p align="left"><b>Texto alinhado a esquerda = </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius rhoncus ipsum at egestas. Ut sagittis leo vel tortor euismod finibus. Proin placerat tincidunt nulla, vel convallis dolor condimentum vitae. Maecenas id arcu cursus, tincidunt dui nec, faucibus est. Vivamus hendrerit ex id magna ornare, id mollis lacus pulvinar. Aliquam sit amet augue in quam volutpat consequat. Sed fermentum leo erat, in facilisis purus faucibus eget. Donec euismod tincidunt semper. Quisque sit amet diam non nibh imperdiet porttitor. Aenean venenatis orci a lorem mattis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec hendrerit enim. Phasellus consectetur vitae elit a blandit. Nulla iaculis aliquam mauris ut interdum. Nam tempus fermentum sem ullamcorper consectetur. Vestibulum tempus finibus aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius rhoncus ipsum at egestas. Ut sagittis leo vel tortor euismod finibus. Proin placerat tincidunt nulla, vel convallis dolor condimentum vitae. Maecenas id arcu cursus, tincidunt dui nec, faucibus est. Vivamus hendrerit ex id magna ornare, id mollis lacus pulvinar. Aliquam sit amet augue in quam volutpat consequat. Sed fermentum leo erat, in facilisis purus faucibus eget. Donec euismod tincidunt semper. Quisque sit amet diam non nibh imperdiet porttitor. Aenean venenatis orci a lorem mattis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec hendrerit enim. Phasellus consectetur vitae elit a blandit. Nulla iaculis aliquam mauris ut interdum. Nam tempus fermentum sem ullamcorper consectetur. Vestibulum tempus finibus aliquet.</p>
+        <hr>
+        <p align="justify"><b>Texto alinhado a justify = </b>Lorem ipsum dolor sit amet, M, <mark>JOSIAS</mark> consectetur adipiscing elit. Morbi varius rhoncus ipsum at egestas. Ut sagittis leo vel tortor euismod finibus. Proin placerat tincidunt nulla, vel convallis <span style="background-color: blueviolet;"> RICK AND MORTY</span>dolor condimentum vitae. Maecenas id arcu cursus, tincidunt dui nec, faucibus est. Vivamus hendrerit ex id magna ornare, id mollis lacus pulvinar. Aliquam sit amet augue in quam volutpat consequat. Sed fermentum leo erat, in facilisis purus faucibus eget. Donec euismod tincidunt semper. Quisque sit amet diam non nibh imperdiet porttitor. Aenean venenatis orci a lorem mattis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec hendrerit enim. Phasellus consectetur vitae elit a blandit. Nulla iaculis aliquam mauris ut interdum. Nam tempus fermentum sem ullamcorper consectetur. Vestibulum tempus finibus aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius rhoncus ipsum at egestas. Ut sagittis leo vel tortor euismod finibus. Proin placerat tincidunt nulla, vel convallis dolor condimentum vitae. Maecenas id arcu cursus, tincidunt dui nec, faucibus est. Vivamus hendrerit ex id magna ornare, id mollis lacus pulvinar. Aliquam sit amet augue in quam volutpat consequat. Sed fermentum leo erat, in facilisis purus faucibus eget. Donec euismod tincidunt semper. Quisque sit amet diam non nibh imperdiet porttitor. Aenean venenatis orci a lorem mattis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec hendrerit enim. Phasellus consectetur vitae elit a blandit. Nulla iaculis aliquam mauris ut interdum. Nam tempus fermentum sem ullamcorper consectetur. Vestibulum tempus finibus aliquet.</p>
+
+        <marquee behavior="" direciton="">
+                        ########            
+                        ####    ########      
+                ############    ##########    
+            ############################      
+            ############################        
+            ##############################          
+            ################################          
+            ##########        ##############          
+            ############          ##########            
+            ##################    ##########            
+            ##################    ########              
+            ################    ######                
+            ############          ####              
+            ##########              ####              
+            ####################      ######    
+        </marquee>
+
+        <!-- CRIAR LISTA NUMERADA -->
+        <h3>LISTA NUMERADA</h3>
+        <ol>
+            <li><font size="3" face="Courier New">Caderno</font></li>
+            <li><font size="3" face="Courier New">Lápis</font></li>
+            <li><font size="3" face="Courier New">Borracha</font></li>
+        </ol>
+
+        <!-- LISTA ÃO NUMERADA -->
+        <!-- Tem três tipos: disk, square, circle -->
+        <h3>LISTA NÃO NUMERADA</h3>
+        <ul type="circle">
+            <li>Mesa</li>
+            <li>Cadeira</li>
+            <li>Sofá</li>
+        </ul>
+
+        <!-- LISTA DE DEFINIÇÃO -->
+        <h3>LISTA DE DEFINIÇÃO</h3>
+        <dt>Gentle</dt>
+        <dd>dócil, manso, brando, tolerante<br>
+            pacato, pacifico,<br>
+            benévolo, propício, tranquilo, gentil</dd>
+
+        <dt>Gentlefolk</dt>
+        <dd>nobreza, fidalguia, burguesa</dd>
+    </p>
+
+    <hr width="100%" size="20" color="orange"><br>
+
+    <h1>TABELA</h1>
+    <table border="1">
+        <!-- TABELAS-->
+
+        <!-- LINHA 1-->
+        <tr>
+            <td>Itens/Mês</td>
+            <th>Janeiro</th>
+            <th>Fevereiro</th>
+            <th>Março</th>
+        </tr>
+
+        <!-- LINHA 2-->
+
+        <tr>
+            <th>Users</th>
+            <td>80</td>
+            <td>66</td>
+            <td>45</td>
+        </tr>
+
+        <!-- LINHA 3 -->
+        <tr>
+            <th>Linhas</th>
+            <td>3</td>
+            <td>8</td>
+            <td>83</td>
+
+        </tr>
+    </table>
+
+    <h1>TABELA 2</h1>
+    <table border="2">
+        <tr>
+            <td>Primeira célula</td>
+            <td>Segunda célula</td>
+            <td>Terceira célula</td>
+        </tr>
+
+        <tr>
+            <td align="center">Centro</td>
+            <td align="left">Esquerda</td>
+            <td align="right">Direita</td>
+        </tr>
+    </table>
+
+
+    <h1>TABLE 3</h1>
+    <table border="1" style="background-color: red; padding: 10px; margin: 10px" width: "100%" height="50" cellspacing="10">
+        <tr>
+            <td>Teste para Alinhamentos com relação a bordas<br> inferior e superior</td>
+            <td valign="top">TOP</td>
+            <td valign="bottom">BOTTOM</td>
+            <td valign="middle">MIDDLE</td>
+        </tr>
+    </table>
+
+    <H1>TABELA 4</H1>
+    <table border="1">
+        <tr>
+            <td colspan="3">3 Colunas</td>
+            <td>Normal</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>col 1</td>
+            <td>col 2</td>
+            <td>col 3</td>
+            <td>col 4</td>
+            <td>col 5</td>
+        </tr>
+    </table>
+
+    <h1>Tabela 5</h1>
+    <table border="1">
+        <TR>
+            <td rowspan="3">3 linhas</td>
+            <td>col 2</td>
+            <td>col 3</td>
+            <td>col 4</td>
+            <td>col 5</td>
+        </TR>
+        <tr>
+            <td>col 2</td>
+            <td>col 3</td>
+            <td>col 4</td>
+            <td>col 5</td>
+        </tr>
+        <tr>
+            <td>col 2</td>
+            <td>col 3</td>
+            <td>col 4</td>
+            <td>col 5</td>
+        </tr>
+    </table>
+
+</body>
+</html>
